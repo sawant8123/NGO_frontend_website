@@ -55,16 +55,12 @@ export default function CausesSection() {
         <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-12">
           Our <span className="text-ecoGreen">Focus Areas</span>
         </h2>
-
-        {/* Infinite marquee */}
         <div className="relative overflow-hidden">
           <div className="flex gap-6 animate-scroll w-max">
             {causes.concat(causes).map((cause, idx) => (
               <CauseCard key={idx} {...cause} />
             ))}
           </div>
-
-          {/* Gradient overlays */}
           <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-orange-100 to-transparent pointer-events-none z-10" />
           <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-orange-100 to-transparent pointer-events-none z-10" />
         </div>

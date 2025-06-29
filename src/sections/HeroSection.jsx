@@ -6,7 +6,7 @@ export default function HeroSection() {
   const [showTypewriter, setShowTypewriter] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowTypewriter(true), 1000); // wait for initial animations
+    const timer = setTimeout(() => setShowTypewriter(true), 1000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -15,7 +15,6 @@ export default function HeroSection() {
       className="relative min-h-[100vh] md:min-h-[95vh] bg-center bg-cover flex items-center justify-center text-white w-full px-2 sm:px-4 md:px-12 pt-24"
       style={{ backgroundImage: "url('/images/digital-screen-with-environment-day.jpg')" }}
     >
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black/40 z-0"></div>
       <div className="relative text-left max-w-screen-xl w-full space-y-6 z-10">
         <motion.h1
@@ -26,7 +25,6 @@ export default function HeroSection() {
         >
           Nishant Charitable Trust
         </motion.h1>
-
         <motion.p
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -35,7 +33,6 @@ export default function HeroSection() {
         >
           Empowering Lives Through Education and Support
         </motion.p>
-
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

@@ -10,11 +10,8 @@ export default function AboutSection() {
 
   return (
     <section id="about" className="relative py-12 bg-gray-50 overflow-hidden">
-      {/* Decorative Circle */}
       <div className="absolute top-[-50px] right-[-50px] w-[200px] h-[200px] bg-[#F4821F] rounded-full opacity-20 z-0" />
-
       <div className="container mx-auto px-4 relative z-10">
-        {/* Header */}
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-extrabold text-ecoGreen relative inline-block">
             About the Trust
@@ -25,10 +22,7 @@ export default function AboutSection() {
             education, awareness, and support programs.
           </p>
         </div>
-
-        {/* Content */}
         <div className="flex flex-col md:flex-row items-center gap-6">
-          {/* Image with animated glow behind on hover */}
           <motion.div
             className="w-full md:w-1/2 flex justify-center relative group"
             initial={{ scale: 0.9, opacity: 0 }}
@@ -37,7 +31,6 @@ export default function AboutSection() {
             viewport={{ once: true }}
           >
             <div className="relative max-w-md w-full">
-              {/* Glow background on hover (only visible on hover) */}
               <motion.div
                 className="absolute inset-0 rounded-2xl z-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100 pointer-events-none"
                 style={{ backgroundColor: "#F4821F", filter: "blur(30px)" }}
@@ -48,8 +41,6 @@ export default function AboutSection() {
                   ease: "easeInOut",
                 }}
               />
-
-              {/* Image */}
               {!imageError ? (
                 <img
                   src="/images/About.jpg"
@@ -64,8 +55,6 @@ export default function AboutSection() {
               )}
             </div>
           </motion.div>
-
-          {/* Text */}
           <motion.div
             className="md:w-1/2"
             initial={{ x: 50, opacity: 0 }}
@@ -83,7 +72,6 @@ export default function AboutSection() {
               empowered society by bridging the gap between potential and
               opportunity.
             </p>
-
             <ul className="mt-4 list-disc list-inside text-gray-600 text-sm md:text-base marker:text-ecoGreen">
               <li>Educational workshops & scholarships</li>
               <li>Health check-up & awareness camps</li>

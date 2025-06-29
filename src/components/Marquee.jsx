@@ -9,7 +9,7 @@ export const Marquee = ({ children, className = "", pauseOnHover = false }) => {
     >
       <div className="flex animate-scroll">
         {children}
-        {children} {/* Duplicate for seamless loop */}
+        {children}
       </div>
     </div>
   );

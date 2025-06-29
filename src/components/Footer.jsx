@@ -4,10 +4,7 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube } from 're
 export default function Footer() {
   return (
     <footer className="bg-ecoGreen text-white pt-12">
-      {/* Centered container */}
       <div className="w-full max-w-screen-xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 pb-8 justify-items-center text-center">
-        
-        {/* Logo and Description */}
         <div className="flex flex-col items-center">
           <div className="flex items-center space-x-2">
             <img src="/images/image.png" alt="Nishant Trust Logo" className="h-10 w-auto" />
@@ -17,8 +14,6 @@ export default function Footer() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.
           </p>
         </div>
-
-        {/* Quick Links */}
         <div>
           <h3 className="text-ecoOrange font-semibold mb-3">Quick Links</h3>
           <ul className="space-y-2">
@@ -28,8 +23,6 @@ export default function Footer() {
             <li><a href="#" className="hover:text-ecoOrange transition-colors">Contact</a></li>
           </ul>
         </div>
-
-        {/* Other Pages */}
         <div>
           <h3 className="text-ecoOrange font-semibold mb-3">Other Pages</h3>
           <ul className="space-y-2">
@@ -39,8 +32,6 @@ export default function Footer() {
             <li><a href="#" className="hover:text-ecoOrange transition-colors">FAQ</a></li>
           </ul>
         </div>
-
-        {/* Contact Info */}
         <div>
           <h3 className="text-ecoOrange font-semibold mb-3">Contact Info</h3>
           <ul className="space-y-3 text-sm">
@@ -50,8 +41,6 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-
-      {/* Social Icons Section */}
       <div className="w-full max-w-screen-xl mx-auto flex flex-col items-center gap-4 pb-6 text-center px-4">
         <h3 className="text-lg font-bold text-white">Social</h3>
         <div className="flex gap-4">
@@ -62,8 +51,6 @@ export default function Footer() {
           <a href="#" className="bg-white/10 hover:bg-ecoOrange text-white hover:text-white rounded-full p-2 transition"><FaYoutube size={22} /></a>
         </div>
       </div>
-
-      {/* Copyright */}
       <div className="w-full max-w-screen-xl mx-auto border-t border-white/10 py-4 text-center text-xs opacity-80 px-4">
         &copy; {new Date().getFullYear()} Nishant Charitable Trust. All rights reserved.
       </div>

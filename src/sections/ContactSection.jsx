@@ -13,7 +13,6 @@ export default function ContactSection() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
     alert("Message sent!");
     setFormData({ name: "", email: "", message: "" });
   };
@@ -21,7 +20,6 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-16 w-full px-2 sm:px-4 md:px-12 bg-gray-100" data-aos="fade-up">
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-        {/* Contact Form */}
         <div data-aos="fade-right" className="bg-white shadow-lg rounded-2xl p-4 md:p-8 w-full">
           <h2 className="text-2xl md:text-3xl font-bold text-ecoOrange mb-4">Contact Us</h2>
           <p className="text-gray-600 mb-6 md:mb-8 text-base md:text-lg">
@@ -69,7 +67,6 @@ export default function ContactSection() {
             </button>
           </form>
         </div>
-        {/* Contact Info */}
         <div data-aos="fade-left" className="flex flex-col gap-6 md:gap-8 items-center md:items-start w-full">
           <div className="bg-ecoGreen/10 rounded-xl p-4 md:p-6 w-full">
             <h3 className="text-lg md:text-xl font-bold text-ecoGreen mb-2">Our Office</h3>
